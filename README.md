@@ -26,11 +26,15 @@ A messaging system is one of the most popular types of software there is. Skype,
 * learn how to use setInterval to do a fetch call every 1000 miliseconds
   * use this tool to do a fetch call to `/messages` to get the messages array
   * loop the messages array and show the messages in the web page using innerHTML
-
+## Test
+* open 2 browsers and go to http://localhost:8080
+* type in the text box and click send
+* The message should appear in the both browsers
 ## Deploy
 * Right now our app is restricted to the wi fi we are on
 * Copy your code to an express repl.it if you want the outside world to be able to use your chat app.
 
 ## Challenge
-* Incorporate sign up so that you know who your talking to, not just the client id
+* Incorporate sign up so that you know who you are talking to, not just the client id
+* When you stop your server, all the messages will get lost. Save the messages in a file instead of a variable. 
 * Build the concept of rooms so that everyone isn't just talking to everyone else.
