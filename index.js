@@ -16,8 +16,6 @@ app.listen(thePort, (err) => {
 });
 
 let clientId = 0;
-module.exports = clientId;
-
 
 const messages = [
   {
@@ -28,3 +26,5 @@ const messages = [
 
 
 
+module.exports = clientId;
+module.exports = messages;

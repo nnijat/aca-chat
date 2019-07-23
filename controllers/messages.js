@@ -2,10 +2,10 @@
 
 let messages = require('../index');
 
-// exports.list = function list(request, response) {
-//     let enableComments = comments.filter(c => c.isActive != false);
-//     response.json(enableComments);
-// }
+exports.list = function list(request, response) {
+    let enableComments = comments.filter(c => c.isActive != false);
+    response.json(enableComments);
+}
 
 // exports.show = function show(request, response) {
 //     let comment = comments.find(c => c._id == request.params.id);
