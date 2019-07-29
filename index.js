@@ -10,21 +10,12 @@ const thePort = 8080;
 
 // Routes
 let clientsRoutes = require('./routes/clients');
+let messagesRoutes = require('./routes/messages');
+
+// Call Routes
+app.use(clientsRoutes);
+app.use(messagesRoutes);
 
 app.listen(thePort, (err) => {
   err ? console.log("Error", err) : console.log("Web server is listening for messages on port:", thePort);
 });
-
-let clientId = 0;
-
-const messages = [
-  {
-    clientId: 0,
-    text: "Welcome To Chat"
-  }
-];
-
-
-
-module.exports = clientId;
-module.exports = messages;
