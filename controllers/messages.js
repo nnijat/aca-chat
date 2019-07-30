@@ -14,6 +14,7 @@ exports.list = function list(request, response) {
 
 exports.create = function create(request, response) {
     let messageBody = request.body;
+    console.log("Insert body: ", messageBody)
     messages.push(messageBody);
     response.json(messages);
 }
